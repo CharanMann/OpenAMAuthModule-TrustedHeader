@@ -33,7 +33,10 @@ Testing:
 ========
 1. Navigate to SampleVendor WAM login page and perform authentication. After successful authentication, SampleVendor WAM sets the trusted header and invokes OpenAM to get iplanetDirectoryPro cookie.
    This OpenAM authentication shall use custom trusted header authentication module. SampleVendor WAM parses OpenAM's iplanetDirectoryPro token and set as HTTP cookie. 
-2. Navigate to resource protected by OpenAM. OpenAM should allow access to protected resource (if OpenAM authorization policy evaulation succeeds) 
+2. Navigate to resource protected by OpenAM. OpenAM should allow access to protected resource (if OpenAM authorization policy evaluation succeeds)
+ 
+Curl command(s):
+- curl -X POST -H "Content-Type: application/json" -H "X-Special-Trusted-User: demo" -H "Cache-Control: no-cache" -H "http://openam13.sample.com:8080/openam/json/authenticate"
 
 * * *
 
@@ -50,4 +53,5 @@ Header, with the fields enclosed by brackets [] replaced by your own identifying
 information: "Portions copyright [year] [name of copyright owner]".
 
 Copyright 2016 Charan Mann
+
 Portions Copyrighted 2016 ForgeRock AS
