@@ -36,7 +36,7 @@ Testing:
 2. Navigate to resource protected by OpenAM. OpenAM should allow access to protected resource (if OpenAM authorization policy evaluation succeeds)
  
 Curl command(s):
-- curl -X POST -H "Content-Type: application/json" -H "X-Special-Trusted-User: demo" -H "Cache-Control: no-cache" -H "http://openam13.sample.com:8080/openam/json/authenticate"
+- curl -X POST -H "Content-Type: application/json" -H "X-Special-Trusted-User:demo" "http://openam13.sample.com:8080/openam/json/authenticate"
 
 * * *
 
