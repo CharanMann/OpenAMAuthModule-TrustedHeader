@@ -14,7 +14,7 @@
  * Copyright 2016 Charan Mann
  * Portions Copyrighted 2016 ForgeRock AS
  *
- * OpenAMAuthModule-SuperHeader: Created by Charan Mann on 4/1/16 , 9:37 AM.
+ * OpenAMAuthModule-TrustedHeader: Created by Charan Mann on 4/1/16 , 9:37 AM.
  */
 
 package org.forgerock.openam.examples;
@@ -35,7 +35,9 @@ import java.util.Map;
 
 
 /**
- * TrustedHeader authentication module example.
+ * TrustedHeader OpenAM custom authentication module example. This module checks the presence of configured trusted header in the request.
+ *
+ * Note that this is just a sample implementation for demo purposes.
  */
 public class TrustedHeader extends AMLoginModule {
 
@@ -99,6 +101,7 @@ public class TrustedHeader extends AMLoginModule {
         while (headers.hasMoreElements()) {
             String headerName = (String) headers.nextElement();
             if (headerName.equalsIgnoreCase(trustedHeaderName)) {
+
                 userId = request.getHeader(headerName);
                 debug.message("Trusted header found for user: " + userId);
             }
