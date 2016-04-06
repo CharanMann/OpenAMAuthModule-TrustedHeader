@@ -25,7 +25,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.forgerock.openam.examples</groupId>
-    <artifactId>openam-auth-trusted-headers</artifactId>
+    <artifactId>openam-auth-trusted-header</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 

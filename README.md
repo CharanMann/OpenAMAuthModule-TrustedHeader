@@ -1,6 +1,6 @@
 # OpenAMAuthModule-TrustedHeader
 
-*An OpenAM Custom Authentication Module using Trusted Headers*
+*An OpenAM Custom Authentication Module using Trusted Header*
 
 
 This custom authentication module can be used to perform SSO across 3rd party WAM (Web Access Management) product and OpenAM using trusted HTTP header
