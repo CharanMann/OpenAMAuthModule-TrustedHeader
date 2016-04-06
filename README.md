@@ -8,8 +8,9 @@ For simplicity; this 3rd party WAM shall be referred as SampleVendor WAM in this
 
 Disclaimer of Liability :
 =========================
-The code for this project is only meant for demo purposes only. We make no warranty, representation or undertaking whether expressed or implied, nor does it assume any legal liability, whether
-direct or indirect, or responsibility for the accuracy, completeness, or usefulness of any information. 
+The code for this project is only meant for DEMO purposes only and is not PRODUCTION ready. I make no warranty, representation or undertaking whether expressed or implied, nor does it assume any 
+legal liability, whether direct or indirect, or responsibility for the accuracy, completeness, or usefulness of any information. 
+
 Further analysis on the detailed requirements, fine-tuning and validation of the proposed architecture is still required by the selected Systems Integrator and/or Architects in charge of 
 architecting the IAM project.
 
