@@ -107,7 +107,8 @@ public class TrustedHeader extends AMLoginModule {
             }
         }
         if (userId == null) {
-            throw new AuthLoginException("No trusted header found");
+            debug.message("No Trusted header found");
+            throw new AuthLoginException("No Trusted header found");
         }
         return ISAuthConstants.LOGIN_SUCCEED;
 

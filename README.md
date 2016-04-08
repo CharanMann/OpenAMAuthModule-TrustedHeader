@@ -22,7 +22,7 @@ Pre-requisites :
     
 SampleVendor WAM Configuration:
 ===============================
-1. SampleVendor WAM should be configured to publish trusted HTTP header after sucessful authentication. 
+1. SampleVendor WAM should be configured to publish trusted HTTP header after successful authentication. 
 2. SampleVendor WAM should be configured to invoke OpenAM authentication REST endpoint to get OpenAM iplanetDirectoryPro cookie. This authentication shall be performed using trusted header. 
 3. SampleVendor WAM should be configured to parse OpenAM's iplanetDirectoryPro token (retrieved in step 2) and set as HTTP cookie. 
 
@@ -38,7 +38,7 @@ Testing:
 2. Navigate to resource protected by OpenAM. OpenAM should allow access to protected resource (if OpenAM authorization policy evaluation succeeds)
  
 Curl command(s):
-- curl -X POST -H "Content-Type: application/json" -H "X-Special-Trusted-User:demo" "http://openam13.sample.com:8080/openam/json/authenticate"
+- curl -X POST -H "Content-Type: application/json" -H "X-Special-Trusted-User:demo" "http://openam13.sample.com:8080/openam/json/authenticate" -v
 
 * * *
 
